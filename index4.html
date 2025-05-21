@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <h1>Orientação a objetos</h1>
+
+    <script>
+        class Livro{
+            constructor(titulo, autor, ano) {
+                this.titulo = titulo;
+                this.autor = autor;
+                this.ano = ano;
+            }
+
+            detalhes () {
+                console.log(` Livro: ${this.titulo} | Autor: ${this.autor} |  Ano: ${this.ano}`)
+            }
+        }
+
+        const livro1 = new Livro("Dom Casmurro", "Machado de Assis", 1899)
+        const livro2 = new Livro ("O pequeno principe", "Antoine de Saint-Exupéry", 1943)
+
+        livro1.detalhes();
+        livro2.detalhes();
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h1>Manipulação de Array</h1>
+    
+    <script>
+        const numeros = [3, 7, 2, 9, 4];
+
+        const maior = Math.max (... numeros);
+        const menor = Math.min (... numeros);
+        console.log("Maior valor:", maior);
+        console.log("Menor valor", menor);
+
+        const dobro = numeros.map (num => num * 2);
+        console.log ("Array com dobro:", dobro);
+
+        const maioresQueCinco = numeros.filter (num => num > 5);
+        console.log("Numeros Maiores que 5:", maioresQueCinco)
+    </script>
+</body>
+</html>
