@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <h1> Criação e Manipulação de objeto</h1>
+
+    <script>
+        const carro = {
+            marca: "Gol",
+            modelo: "GTI", 
+            ano: 2015,
+            exibirInfo: function() {
+                console.log(`Marca: ${this.marca} | Modelo: ${this.modelo} | Ano: ${this.ano}`);
+            }
+        };
+
+        carro.exibirInfo();
+
+        carro.cor = "Azul";
+
+        carro.ano = 2025;
+
+        console.log("Objeto carro atualizadp:", carro);
+    </script>
+</body>
+</html>
